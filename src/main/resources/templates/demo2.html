@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{title}">demo2</title>
+</head>
+<body>
+id:<span th:text="${user.id}"></span>---name:<span th:text="${user.name}"></span>--age:<span th:text="${user.age}"></span><br>
+
+address:<span th:text="${map.address}"></span>---phone:<span th:text="${map.phone}"></span>---zipcode:<span th:text="${map.zipcode}"></span>
+
+<br>
+<img th:src="${map.pic}">
+</body>
+</html>

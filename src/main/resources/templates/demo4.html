@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{title}">demo4</title>
+</head>
+<body>
+<h1 th:text="${userName}"></h1>
+<br>
+<input type="text" th:value="${userName}">
+<br>
+<!--<h1 th:text="'欢迎，来'+${userName}+'学习'"></h1>
+<h1 th:text="|欢迎，来${userName}学习|"></h1>-->
+
+<a th:href="${href}" th:text="|欢迎，来${userName}学习|"></a>
+<div th:insert="~{test/common :: myfoot1}"></div>
+
+<div th:replace="~{test/common :: myfoot1}"></div>
+
+<div th:include="~{test/common :: myfoot1}"></div>
+</body>
+</html>

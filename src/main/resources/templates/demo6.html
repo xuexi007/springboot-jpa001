@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{title}">demo4</title>
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.2.1/css/bootstrap.css" th:href="@{webjars/bootstrap/4.2.1/css/bootstrap.css}">
+</head>
+<body>
+<h1 th:text="${#dates.format(now,'yyyy-MM-dd HH:mm:ss')}"></h1>
+
+<h2 th:text="${#numbers.formatDecimal(price,1,2)}"></h2>
+
+<h3 th:text="${#strings.substring(str,0,60)}"></h3>
+<h3 th:text="${#strings.abbreviate(str,60)}"></h3>
+<h2 th:if="${#strings.isEmpty(str2)}">str2为空</h2>
+</body>
+</html>

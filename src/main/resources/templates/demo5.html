@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{title}">demo4</title>
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.2.1/css/bootstrap.css" th:href="@{webjars/bootstrap/4.2.1/css/bootstrap.css}">
+</head>
+<body>
+<div th:insert="~{common :: myhead1}"></div>
+<h1 th:if="${flag}=='yes'">中公教育</h1>
+<h1 th:unless="${flag}=='yes'">优就业</h1>
+
+<div th:switch="${menu}">
+    <h1 th:case="'admin'">admin</h1>
+    <h1 th:case="${manager}">manger</h1>
+</div>
+
+<div th:insert="~{common :: myfoot1}"></div>
+</body>
+</html>
