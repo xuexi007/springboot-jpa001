@@ -78,4 +78,19 @@ public class Demo1Controller {
 
         return "demo6";
     }
+
+    public String test1(Integer id){
+        System.out.println("老鸟增加test1");
+        return "test1";
+    }
+
+    public String test2(){
+        System.out.println("老鸟增加test2");
+        return "test1";
+    }
+
+    public String test3(Integer id){
+        System.out.println("老鸟增加test3");
+        return "test1";
+    }
 }
