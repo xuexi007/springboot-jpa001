@@ -2,7 +2,7 @@ package com.offcn;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+//**************************修改******************************8
 @SpringBootApplication
 public class SpringbootJpa001Application {
 	/**
@@ -12,5 +12,7 @@ public class SpringbootJpa001Application {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootJpa001Application.class, args);
 	}
+	
+	
 
 }
